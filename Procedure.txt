@@ -1,0 +1,18 @@
+Open Powershell in Admin Mode and enter command as
+	connect-azaccount
+Validate with your Azure Credentials 
+Now Create Azure resource Gropu with Below command
+	New-AzResourceGroup -ResourceGroupName armlinvm -Location WestUS3
+After creation of ResourceGroup enter below command for VM Creation
+	New-AzResourceGroupDeployment -ResourceGroupName armlinvm -TemplateFile G:\arm\linvm\azuredeploy.json -TemplateParameterFile G:\arm\linvm\azuredeploy.parameters.json
+
+
+VM will be created Sucessfully 
+
+
+To Find Version Table
+$PSVersionTable
+
+To Update PS Maodules 
+Update-Module
+

@@ -1,0 +1,42 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "vmName": {
+      "value": "simpleLinuxVM"
+    },
+    "adminUsername": {
+      "value": "azadmin"
+    },
+    "authenticationType": {
+      "value": "password"
+    },
+    "adminPasswordOrKey": {
+      "value": "Password@123"
+    },
+    "dnsLabelPrefix": {
+      "value": "azlinvm"
+    },
+    "ubuntuOSVersion": {
+      "value": "Ubuntu-2004"
+    },
+    "location": {
+      "value": "WestUS3"
+    },
+    "vmSize": {
+      "value": "Standard_D2s_v3"
+    },
+    "virtualNetworkName": {
+      "value": "linvmvNet"
+    },
+    "subnetName": {
+      "value": "linvmSubnet"
+    },
+    "networkSecurityGroupName": {
+      "value": "linvmnsg"
+    },
+    "securityType": {
+      "value": "TrustedLaunch"
+    }
+  }
+}
